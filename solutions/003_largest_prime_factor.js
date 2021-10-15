@@ -2,7 +2,7 @@
 //
 // What is the largest prime factor of the number 600851475143?
 
-import isPrime from '../utils/isPrime.js';
+import { getNextPrime } from '../utils/primes.js';
 
 function getLargestPrimeFactor(number) {
 
@@ -49,21 +49,6 @@ function multiplyNumbersInArray(arrayOfNumbers) {
         result = result * number;
     });
     return result;
-
-}
-
-function getNextPrime(number, max = inputValue) {
-
-    while ( number < max ) {
-        
-        number++;
-        if( isPrime(number) ) {
-            return number;
-        }
-
-    }
-
-    return -1;
 
 }
 

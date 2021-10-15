@@ -1,4 +1,4 @@
-export default function isPrime(number) {
+export function isPrime(number) {
 
     let factors = 0;
 
@@ -15,5 +15,14 @@ export default function isPrime(number) {
     }
 
     return number > 1;
+
+}
+
+export function getNextPrime(number) {
+
+    while (true) {
+        number++;
+        if ( isPrime(number) ) return number;
+    }
 
 }

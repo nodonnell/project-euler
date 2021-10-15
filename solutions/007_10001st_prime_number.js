@@ -2,7 +2,7 @@
 //
 // What is the 10,001st prime number?
 
-import isPrime from '../utils/isPrime.js';
+import { getNextPrime } from '../utils/primes.js';
 
 function find10001stPrimeNumber() {
 
@@ -16,13 +16,6 @@ function find10001stPrimeNumber() {
 
 }
 
-function getNextPrime(number) {
 
-    while (true) {
-        number++;
-        if ( isPrime(number) ) return number;
-    }
-
-}
 
 console.log(find10001stPrimeNumber());
