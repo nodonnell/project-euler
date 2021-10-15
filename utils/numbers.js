@@ -4,3 +4,11 @@ export function getLargestNumberInArray(arrayOfNumbers) {
     return arrayOfNumbers[arrayOfNumbers.length - 1];
 
 }
+
+export function getSumOfNumbersInArray(arrayOfNumbers) {
+    let sum = 0;
+    arrayOfNumbers.forEach(number => {
+        sum += number;
+    });
+    return sum;
+}
