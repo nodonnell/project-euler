@@ -33,19 +33,6 @@ function getPrimeFactors(number) {
 
 }
 
-function getNextPrimeFactor(number, primeFactors) {
-
-    let quotients = [number];
-    
-    for ( let i = 0; i < primeFactors.length; i++ ) {
-
-        const nextQuotient = quotients[i]/primeFactors[i];
-        quotients.push(nextQuotient);
-
-    }
-
-}
-
 function findSmallestPrimeFactor(number, smallestPrime = 2) {
 
     if ( Number.isInteger(number / smallestPrime) ) return smallestPrime;
