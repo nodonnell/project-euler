@@ -3,12 +3,12 @@
 // What is the largest prime factor of the number 600851475143?
 
 import { getNextPrime } from '../utils/primes.js';
+import { getLargestNumberInArray } from '../utils/numbers.js';
 
 function getLargestPrimeFactor(number) {
 
     const primeFactors = getPrimeFactors(number);
-    primeFactors.sort( (a, b) => a - b );
-    return primeFactors[primeFactors.length - 1]
+    return getLargestNumberInArray(primeFactors);
 
 }
 
