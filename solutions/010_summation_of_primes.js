@@ -1,4 +1,4 @@
-// https://projecteuler.net/problem=10s
+// https://projecteuler.net/problem=10
 //
 // Find the sum of all the primes below two million.
 
